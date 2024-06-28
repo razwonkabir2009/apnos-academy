@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--Programming By Razwon Kabir Famim. All rights reserved by the developer.-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="APNOS MEDIA 2022 is one of the most interactive and modern media and content creator of Bangladesh.APNOS TECH is a company owned by them. It provides awesome education to the young about cyber-security and safety.">
+    <meta name="keywords" content="Cyber-security,Malware,Ransomeware,Virus,Privacy,Performane of PC,Bangladeshi site">
+    <meta name="author" content="Razwon Kabir Famim">
+    <link rel="icon" type="image/x-icon" href="images/sitelogo.png"><!--Favicon For the Site.-->
+    <link rel="stylesheet" href="style.css"><!--Our StyleSheet-->
+    <title>APNOS TECH | ABOUT</title>
+</head>
+
+<body>
+    <nav>
+        <video autoplay muted loop style="width:100%;max-width:1920px;">
+            <source src="images/site-header.mp4" type="video/mp4">
+        </video>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="madimi-one-regular" style="font-weight: bolder;">APNOS TECH</a>
+            <a href="index.html" class="comfortaa"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
+            <a href="about.html" class="active comfortaa"><i class="fa-solid fa-circle-info"></i>&nbsp;About</a>
+            <a href="contact.html" class="comfortaa"><i class="fa-solid fa-envelope"></i>&nbsp;Contact</a>
+            <a href="Content/Security/security.html" class="comfortaa"><i class="fa-solid fa-shield"></i>&nbsp;Security</a>
+            <a href="Content/Privacy/privacy.html" class="comfortaa"><i class="fa-solid fa-lock"></i>&nbsp;Privacy</a>
+            <a href="Content/Performance/performance.html" class="comfortaa"><i class="fa-solid fa-meteor"></i>&nbsp;Performance</a>
+            <a href="blog.html" class="comfortaa"><i class="fa-solid fa-square-rss"></i>&nbsp;Blog</a>
+            <a class="icon" onclick="toggleResponsiveClass()" name="nav-button"><i class="fa fa-bars"></i></a>
+            <a class="split" onclick="openSearch()" name="search-overlay"><i class="fa fa-search" style="color: white;cursor: pointer;">&nbsp;Search</i></a>
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay" style="cursor: pointer;"><i class="fa-solid fa-x"></i></span><br><br><br><br>
+                <div class="overlay-content">
+                    <h1 class="merriweather-bold" style="color:white;"><i class="fa-solid fa-magnifying-glass">&nbsp;&nbsp;S e a r c h&nbsp;&nbsp;t h e<br><br>s i t e . . .</i></h1>
+                    <form id="searchForm">
+                        <input type="text" placeholder="Filter Category..." style="border: 5px solid white;border-radius: 25px;" id="mySearch" onkeyup="mySearched()">
+                    </form>
+                    <ul id="myMenu">
+                        <li class="search-head"><a class="comfortaa" href="content/Security/security.html"><i class="fa-solid fa-shield"></i>&nbsp;Security</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Privacy/privacy.html"><i class="fa-solid fa-lock"></i>&nbsp;Privacy</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/performance/performance.html"><i class="fa-solid fa-meteor"></i>&nbsp;Performance</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Security/Malware/malware.html"><i class="fa-solid fa-bug"></i>&nbsp;&nbsp;Malware</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Security/Virus/virus.html"><i class="fa-solid fa-virus"></i>&nbsp;&nbsp;Virus</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Security/Ransomware/ransomware.html"><i class="fa-solid fa-circle-dollar-to-slot"></i>&nbsp;&nbsp;Ransomware</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Security/Phishing/phishing.html"><i class="fa-solid fa-anchor-lock"></i>&nbsp;&nbsp;Phishing</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Security/Scam/scam.html"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;&nbsp;Scam</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Security/Hacking/hacking.html"><i class="fa-solid fa-code"></i>&nbsp;&nbsp;Hacking</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Security/Other-threats/other-threats.html"><i class="fa-solid fa-viruses"></i>&nbsp;&nbsp;Other threats</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Security/Passwords/passwords.html"><i class="fa-solid fa-key"></i>&nbsp;&nbsp;Passwords</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Security/Bussiness/bussiness.html"><i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp;Bussiness</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Security/Security-tips/security-tips.html"><i class="fa-solid fa-shield-halved"></i>&nbsp;&nbsp;Security tips</a></li>
+                        <li class="search-head"><a class="comfortaa" href="Content/Privacy/Browser/browser.html"><i class="fa-regular fa-window-maximize"></i>&nbsp;&nbsp;Browser</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Privacy/IP-Address/IP-Address.html"><i class="fa-solid fa-wifi"></i>&nbsp;&nbsp;IP Address</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Privacy/VPN/vpn.html"><i class="fa-solid fa-network-wired"></i>&nbsp;&nbsp;VPN</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Privacy/Streaming/streaming.html"><i class="fa-solid fa-video"></i>&nbsp;&nbsp;Streaming</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Privacy/Identity-protection/identity-protection.html"><i class="fa-solid fa-user-lock"></i>&nbsp;&nbsp;Identity Protection</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Privacy/Dark-web/dark-web.html"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Dark Web</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Privacy/Digital-life/digital-life.html"><i class="fa-solid fa-fingerprint"></i>&nbsp;&nbsp;Digital life</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Privacy/Privacy-tips/privacy-tips.html"><i class="fa-solid fa-lock"></i>&nbsp;&nbsp;Privacy tips</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Performance/Speed/speed.html"><i class="fa-solid fa-gauge"></i>&nbsp;&nbsp;Speed</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Performance/Cleaning/cleaning.html"><i class="fa-solid fa-broom"></i>&nbsp;&nbsp;Cleaning</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Performance/Gaming/gaming.html"><i class="fa-solid fa-gamepad"></i>&nbsp;&nbsp;Gaming</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Performance/Hardware/hardware.html"><i class="fa-solid fa-microchip"></i>&nbsp;&nbsp;Hardware</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Performance/Software/software.html"><i class="fa-solid fa-window-maximize"></i>&nbsp;&nbsp;Software</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Performance/Driver/driver.html"><i class="fa-solid fa-gears"></i>&nbsp;&nbsp;Driver</a></li>
+                        <li class="search-head"><a class="comfortaa" href="content/Performance/Performance-tips/performance-tips.html"><i class="fa-solid fa-bolt"></i>&nbsp;&nbsp;Performance tips</a></li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    <span class="content">
+        <section class="about-section">
+            <header class="header">
+                <h1 id="site-header" class="montserrat-alternates-bold">About Us Page</h1>
+                <p id="tagline" class="merriweather-regular">Some text about who we are and what we do.</p>
+            </header>
+            <div class="blog-box">
+                        <div class="blog-head-2" style="padding: 0 16px;">
+                            <img src="images/team-1.png" alt="Famim" class="site-creator">
+                            <h1 class="montserrat-alternates-black content-head">Razwon Kabir Famim</h1>
+                            <p class="montserrat-alternates-bold-italic content-desc">CEO , Head Instructor And Designer</p>
+                            <p class="ubuntu-mono-regular content-writing">Razwon Kabir Famim: Wearing Many Hats, Building a Bright Future.
+
+                                He isn't your average teenager. This 9th grader at Milestone College, Sector-6, Uttara, Dhaka is already a triple threat: CEO, Head Instructor, and Designer. While juggling his studies, Razwon dives headfirst into the world of web development, working as a part-time professional Front-End Web Developer.
+
+                                His entrepreneurial spirit shines through his dual roles as CEO and Head Instructor. It's likely you'll find him leading the way, both in his own ventures and in guiding others. Whether coding or designing, Razwon's passion for technology is evident. He's a young innovator to watch, sure to make his mark on the tech world in the years to come.</p>
+                                <p class="content-desc comfortaa"><a class="content-desc" href="mailto:inbox@razwonkabir2009.rf.gd"><i class="fa-solid fa-envelope"></i>&nbsp;Mail : inbox@razwonkabir2009.rf.gd</a></p>
+                                <p class="content-desc comfortaa"><a class="content-desc" href="tel:+8809638231796"><i class="fa-solid fa-phone"></i>&nbsp;Phone : +880 9638231796</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+    <footer class="footer">
+        <span class="foot-link">
+            <img class="brand-img" src="images/sitelogo.png" alt="brand-img">
+            <h1 class="madimi-one-regular brand-name">APNOS TECH</h1>
+        </span>
+        <span class="foot-link">
+            <strong class="baloo-da-2">Company</strong><br><br>
+            <a class="baloo-da-2" href="about.html">About Us</a><br><br>
+            <a class="baloo-da-2" href="program.html">Careers</a><br><br>
+            <a class="baloo-da-2" href="blog.html">Blog</a><br><br>
+            <a class="baloo-da-2" href="contact.html">Get In Touch</a><br><br>
+        </span>
+        <span class="foot-link">
+            <strong class="baloo-da-2">Resources</strong><br><br>
+            <a class="baloo-da-2" href="resources.html">Web Designing Providers</a><br><br>
+            <a class="baloo-da-2" href="program.html">Become a Content Creator</a><br><br>
+        </span>
+        <span class="foot-link">
+            <strong class="baloo-da-2">Legal</strong><br><br>
+            <a class="baloo-da-2" href="project.html">Privacy Policy</a><br><br>
+            <a class="baloo-da-2" href="project.html">Cookie Policy</a><br><br>
+            <a class="baloo-da-2" href="contact.html">Submit a Complaint</a><br><br>
+        </span>
+        <span class="foot-link">
+            <strong class="baloo-da-2">About RK GRAPHICS</strong><br><br>
+            <a class="baloo-da-2" href="about.html">About the Developer</a><br><br>
+            <a class="baloo-da-2" href="program.html">Goals and missions</a><br><br>
+            <a class="baloo-da-2" href="blog.html">Personal Blog</a><br><br>
+            <a class="baloo-da-2" href="contact.html">Get your own site</a><br><br>
+        </span>
+        <span class="social-link">
+            <h1 class="legal-txt montserrat-alternates-bold">Get Connected with us on...</h1>
+            <a href="https://www.facebook.com/APNOS22" aria-label="Facebook Page"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https:/www.instagram.com/apnosmedia2022" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://discord.gg/yxw4EqV2pc" aria-label="Discord Server"><i class="fa-brands fa-discord"></i></a>
+            <a href="tel:+8809638231796" aria-label="Phone Number"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:academy@apnosmedia2022.rf.gd?subject=Contact&body=I want to contact you." aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </span>
+        <span class="foot-legal">
+            <div class="legal-box">
+                <strong>
+                    <h1 class="legal-txt comfortaa">© 2024. ALL RIGHTS RESERVED BY THE TEAM. A PART OF</h1>
+                </strong>
+                <p class="legal-txt lobster-two-bold" style="text-align: center;">APNOS MEDIA 2022.</p>
+            </div>
+        </span>
+        <span class="foot-dev-name">
+            <div class="dev-box">
+                <h1 class="legal-txt source-code-pro-bold">DESIGN AND WEB DEVELOPMENT BY</h1>
+                <p class="legal-txt knewave-regular" style="text-align: center;">RAZWON KABIR FAMIM</p>
+            </div>
+        </span>
+    </footer>
+    </span>
+    <script async charset="UTF-8" src="javascripts/script.js" type="text/javascript"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=!0;s1.src='https://embed.tawk.to/660e7f4f1ec1082f04ded560/1hqka2k54';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0)})();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script async charset="UTF-8" src="https://kit.fontawesome.com/9419d875f5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

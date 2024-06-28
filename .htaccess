@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:CF-Visitor} !{"scheme":"https"}
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+ErrorDocument 403 https://apnos-academy.000webhostapp.com/error/403.html
+ErrorDocument 404 https://apnos-academy.000webhostapp.com/error/404.html
+php_value date.timezone Asia/Dhaka
+php_value display_errors On

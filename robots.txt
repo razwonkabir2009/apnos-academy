@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: /errors/
+Sitemap: https://apnos-academy.rf.gd
