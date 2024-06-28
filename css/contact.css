@@ -1,0 +1,53 @@
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top:10px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: #fff;
+  padding: 12px 20px;
+  border: 1px solid #04AA6D;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top:2px;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container-con {
+  border-radius: 5px;
+  background-image:linear-gradient(45deg,lightblue,lightgreen);
+  padding: 50px;
+}
+
+/* Create two columns that float next to eachother */
+.column-con {
+  float: left;
+  width: 50%;
+  padding: 5px 20px;
+}
+.form-con{
+  border: 1px solid rgba(0,0,0,0);
+  border-radius: 35px;
+  background-color: #fff;
+  color: #333;
+  padding: 25px;
+}
+
+/* Clear floats after the columns */
+.row-con:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column-con, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+  }
+}
